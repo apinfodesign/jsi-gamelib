@@ -1,5 +1,135 @@
 # Game Library
 
+The revised components file depends on the revised version of the map below.
+Note that the "beenthere" variable takes three values.
+
+false = present location
+true =  been there
+null =  never been there
+
+ {
+      "rooms": 
+      [
+        {
+          "name": "A",
+          "north": "D",
+          "east": "B",
+          "south": null,
+          "west": null,
+          "entrance": "south",
+          "beenthere": null
+        },
+        {
+          "name": "B",
+          "north": "E",
+          "east": "C",
+          "south": null,
+          "west": "A",
+          "entrance": "null",
+          "beenthere": false
+
+        },
+        {
+          "name": "C",
+          "north": null,
+          "east": null,
+          "south": null,
+          "west": "B",
+          "entrance": "null",
+          "beenthere": null
+
+        },
+        {
+          "name": "D",
+          "north": "G",
+          "east": null,
+          "south": "A",
+          "west": null,
+          "entrance": "null",
+          "beenthere": null
+
+        },
+        {
+          "name": "E",
+          "north": null,
+          "east": "F",
+          "south": "B",
+          "west": null,
+          "entrance": "null",
+          "beenthere": null
+
+        },
+        {
+          "name": "F",
+          "north": null,
+          "east": null,
+          "south": null,
+          "west": "E",
+          "entrance": "null",
+          "beenthere": null
+
+        },
+        {
+          "name": "G",
+          "north": "H",
+          "east": null,
+          "south": "D",
+          "west": null,
+          "entrance": "null",
+          "beenthere": null
+
+        },
+        {
+          "name": "H",
+          "north": null,
+          "east": "I",
+          "south": "G",
+          "west": null,
+          "entrance": "null",
+          "beenthere": null
+
+        },
+        {
+          "name": "I",
+          "north": null,
+          "east": "J",
+          "south": null,
+          "west": "H",
+          "entrance": "null",
+          "beenthere": null
+
+        },
+        {
+          "name": "J",
+          "north": null,
+          "east": "K",
+          "south": null,
+          "west": "I",
+          "entrance": "null",
+          "beenthere": null
+
+        },
+        {
+          "name": "K",
+          "north": null,
+          "east": null,
+          "south": null,
+          "west": "J",
+          "entrance": "null",
+          "beenthere": null, 
+          "treasure": true
+        }
+        
+      ]
+
+
+
+
+
+
+
+
+
 Game library for JavaScript course.
 
 > This repository is for learning purposes. It may intentionally contain bugs or
